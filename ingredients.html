@@ -42,27 +42,69 @@
             height: auto;
             border-radius: 10px;
         }
+        .column-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px; /* Spacing from the text above */
+        }
+        .column {
+            width: 48%; /* Adjust the width as needed */
+            text-align: center; /* Align text to the left within each column */
+        }
+        .column-header {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none; /* Removes the default bullet points */
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="navigation">
-            <a href="main.html">Main Page</a> | 
+            <a href="index.html">Main Page</a> | 
             <a href="about.html">About Page</a>
         </div>
         <h1>Scouty Snacks Ingredients</h1>
-        <img src="ingredients-image.png" alt="Scouty Snacks Ingredients">
+        <img src="ingredients.png" alt="Scouty Snacks Ingredients">
         <p>Our Scouty Snacks are made from only the finest, all-natural ingredients. We believe in transparency and the power of simple, nutritious food. Here's what goes into our treats:</p>
-        <ul>
-            <li>Whole wheat flour - A healthy base for our snacks</li>
-            <li>Peanut butter - For a taste all dogs love</li>
-            <li>Applesauce - Naturally sweet and full of fiber</li>
-            <li>Oats - For that perfect chewy texture</li>
-            <!-- Add more ingredients as you like -->
-        </ul>
+        <!-- Two-column list -->
+        <div class="column-container">
+            <!-- First column with header 'Peanut Butter Monkey' -->
+            <div class="column">
+                <div class="column-header">Peanut Butter Monkey</div>
+                <ul>
+                    <li>Organic Peanut Butter (obviously)</li>
+                    <li>Organic Oats</li>
+                    <li>Organic Banana</li>
+                    <li>Organic Flax Seeds</li>
+
+                    <!-- More ingredients related to 'Peanut Butter Monkey' -->
+                </ul>
+            </div>
+    
+            <!-- Second column with header 'Pumpkin Boom' -->
+            <div class="column">
+                <div class="column-header">Pumpkin Bone</div>
+                <ul>
+                    <li>Organic Pumkin Puree</li>
+                    <li>Organic Apple Sauce</li>
+                    <li>Organic Oats</li>
+                    <li>Cinnamon - A pinch for spice and aroma</li>
+
+                    <!-- More ingredients related to 'Pumpkin Boom' -->
+                </ul>
+            </div>
+        </div>
         <p>Every ingredient is carefully selected for the health and happiness of your four-legged friends!</p>
         <div class="navigation">
-            <a href="main.html">Main Page</a> | 
+            <a href="index.html">Main Page</a> | 
             <a href="about.html">About Page</a>
         </div>
     </div>
